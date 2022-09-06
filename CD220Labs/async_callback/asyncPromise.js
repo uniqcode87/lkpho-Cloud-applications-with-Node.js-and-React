@@ -7,10 +7,9 @@ const methCall = new Promise((resolve,reject)=>{
       const data = fs.readFileSync(filename, {encoding:'utf8', flag:'r'}); 
       resolve(data);
     } catch(err) {
-      reject(err)
+      reject(err);
     }
 });
-
 console.log(methCall);
 
 methCall.then(

@@ -1,7 +1,9 @@
 const axios = require('axios').default;
 const connectToURL = async(url)=>{
     const outcome = axios.get(url);
+    console.log("before await");
     let listOfWork = (await outcome).data.work;
+    console.log("after await");
     listOfWork.forEach((work)=>{
       console.log(work.titleAuth);
     });

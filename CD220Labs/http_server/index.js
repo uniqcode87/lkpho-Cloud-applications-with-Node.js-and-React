@@ -1,8 +1,12 @@
 const http = require('http');
+const callAPI = require('./call-api');
 
 const requestListener = function (req, res) {
   res.writeHead(200);
-  res.end('Hello, World!');
+  callAPI.call(function(returnVal) {
+    console.log(returnVal);
+  });
+  res.end(`Hello`);
 }
 
 const port = 8080;
