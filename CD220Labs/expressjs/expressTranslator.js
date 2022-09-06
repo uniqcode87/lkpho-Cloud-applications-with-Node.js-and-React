@@ -26,7 +26,7 @@ function translate(textToTranslate,res) {
 
     const translateParams = {
         text: textToTranslate,
-        modelId: 'en-es',
+        modelId: 'en-id',
       };
     
     languageTranslator.translate(translateParams)
