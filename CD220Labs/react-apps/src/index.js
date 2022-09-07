@@ -4,7 +4,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App color="green" size="20" backgroundColor="red"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
